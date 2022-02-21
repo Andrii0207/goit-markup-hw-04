@@ -336,6 +336,33 @@ address {
 
 /* ===== END TEAM ===== */
 
+/* ===== START CLIENTS ===== */
+
+.clients-name {
+  margin-bottom: 50px;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--primary-font-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-icon {
+  width: 170px;
+  height: 92px;
+}
+
+/* ===== FINISH CLIENTS ===== */
+
 /* ===== START FOOTER ===== */
 
 .footer {
