@@ -153,16 +153,6 @@ address {
   fill: var(--accent-color);
 }
 
-/* .contact-email:hover .header-icon,
-.contact-email:focus .header-icon {
-  fill: var(--accent-color);
-}
-
-.contact-number:hover .header-icon,
-.contact-number:focus .header-icon {
-  fill: var(--accent-color);
-} */
-
 .contact-number {
   padding: 32px 0;
 
