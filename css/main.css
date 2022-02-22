@@ -298,6 +298,42 @@ address {
   background: var(--white-font-color);
 }
 
+.team-list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.team-item-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team-link-icon:hover .team-icon,
+.team-link-icon:focus .team-icon {
+  background-color: var(--accent-color);
+  fill: var(--white-font-color);
+}
+
+.team-link-icon:hover,
+.team-link-icon:focus {
+  background-color: var(--accent-color);
+}
+
+.team-icon {
+  fill: #afb1b8;
+}
+
 .team-main-name {
   margin-bottom: 50px;
   font-weight: 700;
@@ -319,6 +355,7 @@ address {
 }
 
 .team-position {
+  margin-bottom: 16px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -358,11 +395,14 @@ address {
   display: flex;
 }
 
-.clients-link:hover {
-  fill: var(--accent-color);
+.clients-item:not(:last-child) {
+  margin-right: 30px;
 }
 
-.clients-item {
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 92px;
 
@@ -371,10 +411,25 @@ address {
   border-radius: 4px;
 }
 
-.clients-item:hover,
+.clients-link:hover .clients-icon,
+.clients-link:focus .clients-icon {
+  border-color: var(--accent-color);
+  fill: var(--accent-color);
+}
+
+.clients-link:hover,
 .clients-link:focus {
   border-color: var(--accent-color);
 }
+
+.clients-icon {
+  fill: #afb1b8;
+}
+
+/* .clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
+} */
 
 .clients-link .clients-item:not(:last-child) {
   margin-right: 30px;
@@ -454,15 +509,18 @@ address {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-right: 10px;
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
+  fill: var(--white-font-color);
 }
 
-.footer-link-icon:hover {
-  fill: var(--accent-color);
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+  background-color: var(--accent-color);
 }
 
 /* ===== END FOOTER ===== */ ;
