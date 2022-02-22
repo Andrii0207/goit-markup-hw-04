@@ -144,11 +144,11 @@ address {
 
 .header {
   background-color: var(--white-font-color);
+  /* border-bottom: 1px solid #ECECEC; */
 }
 
 .header-container {
   display: flex;
-  text-align: center;
   align-items: center;
 }
 
@@ -157,7 +157,7 @@ address {
   align-items: center;
 }
 
-.nav-list-item {
+.nav-list-item:not(:last-child) {
   margin-right: 50px;
 }
 
@@ -175,7 +175,6 @@ address {
 
 .link.current {
   color: var(--accent-color);
-  
 }
 
 .web {
@@ -186,6 +185,7 @@ address {
   letter-spacing: 0.03em;
   color: var(--accent-color);
 }
+
 .studio-logo {
   font-family: var(--secondary-font-family);
   font-weight: 700;
@@ -196,6 +196,9 @@ address {
 }
 
 .nav-list-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -209,6 +212,8 @@ address {
 }
 
 .contact-email {
+  padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -222,7 +227,19 @@ address {
   color: var(--accent-color);
 }
 
+.header-icon {
+  margin-right: 10px;
+  fill: var(--secondary-font-color);
+}
+
+.header-contact:hover .header-icon,
+.header-contact:focus .header-icon {
+  fill: var(--accent-color);
+}
+
 .contact-number {
+  padding: 32px 0;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -363,6 +380,8 @@ address {
 }
 
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
   font-family: var(--secondary-font-family);
   font-weight: 700;
   font-size: 26px;
@@ -390,12 +409,53 @@ address {
   margin-bottom: 9px;
 }
 
-.footer-address {
-  margin-top: 20px;
-}
-
 .address {
   color: var(--white-font-color);
+}
+
+.footer-list-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container {
+  display: flex;
+}
+
+.footer-container-address {
+  margin-right: 70px;
+}
+
+.footer-invite {
+  margin-bottom: 20px;
+  font-family: var(--primary-font-family);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-font-color);
+}
+
+.footer-link-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  fill: var(--white-font-color);
+}
+
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+  background-color: var(--accent-color);
 }
 
   /* ===== END FOOTER ===== */
