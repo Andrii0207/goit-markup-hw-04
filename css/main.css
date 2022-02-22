@@ -143,6 +143,16 @@ address {
   color: var(--accent-color);
 }
 
+.header-icon {
+  margin-right: 10px;
+  fill: var(--secondary-font-color);
+}
+
+.header-contact:hover .header-icon,
+.header-contact:focus .header-icon {
+  fill: var(--accent-color);
+}
+
 .contact-number {
   padding: 32px 0;
 
@@ -215,13 +225,19 @@ address {
 
 /* ===== START FEATURES ===== */
 
-/* .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-} */
-
 .features-item {
   width: 270px;
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  width: 270px;
+  height: 120px;
+  background: #f5f4fa;
+  border-radius: 4px;
 }
 
 .features-list {
@@ -229,7 +245,11 @@ address {
   justify-content: space-between;
 }
 
-.features-name {
+.features-icon {
+  fill: ;
+}
+
+. .features-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
