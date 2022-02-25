@@ -89,6 +89,10 @@ address {
   margin-left: auto;
 }
 
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .link.current {
   color: var(--accent-color);
 }
@@ -133,7 +137,6 @@ address {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  margin-right: 50px;
   letter-spacing: 0.02em;
   color: var(--secondary-font-color);
 }
@@ -146,6 +149,12 @@ address {
 .header-icon {
   margin-right: 10px;
   fill: var(--secondary-font-color);
+}
+
+.header-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-contact:hover .header-icon,
@@ -173,6 +182,8 @@ address {
 /* ===== START HERO ===== */
 
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/hero/bg.jpeg);
   background-size: cover;
@@ -245,11 +256,7 @@ address {
   justify-content: space-between;
 }
 
-.features-icon {
-  fill: ;
-}
-
-. .features-name {
+.features-name {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -506,6 +513,7 @@ address {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-container-address {
