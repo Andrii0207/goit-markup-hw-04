@@ -79,6 +79,11 @@ address {
   margin-left: auto;
 }
 
+.header-contact {
+  display: flex;
+  align-items: center;
+}
+
 .link.current {
   color: var(--accent-color);
 }
@@ -382,6 +387,7 @@ address {
 .footer {
   background-color: var(--bg-dark-color);
   padding: 60px 0;
+
 }
 
 .footer-logo {
@@ -426,6 +432,7 @@ address {
 
 .footer-container {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-container-address {
